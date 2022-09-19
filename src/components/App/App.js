@@ -1,4 +1,4 @@
-import logo from '../../logo.svg';
+//import logo from '../../logo.svg';
 import './App.css';
 import React from 'react';
 import BusinessList from '../BusinessList/BusinessList'
@@ -10,6 +10,7 @@ function App() {
       <h1>ravenous</h1>
       <SearchBar />
       <BusinessList />
+      <p className="vic">github/vicontiveros00</p>
     </div>
   );
 }
