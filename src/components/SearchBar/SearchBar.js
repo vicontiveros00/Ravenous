@@ -53,6 +53,13 @@ class SearchBar extends React.Component {
         event.preventDefault();
     }
 
+    handleKeyDown(event) {
+        if (event.key === 'Enter') {
+            this.handleSearch(this.event);
+            event.preventDefault();
+        }
+    }
+
     renderSortByOptions() {
         return Object.keys(this.sortByOptions).map(sortByOption => {
             let sortByOptionValue = this.sortByOptions[sortByOption];
@@ -72,7 +79,11 @@ class SearchBar extends React.Component {
                 </div>
                 <div className="SearchBar-fields">
                     <input onChange={this.handleTermChange} placeholder="Search Businesses" />
-                    <input onChange={this.handleLocationChange} placeholder="Where?" />
+                    <input onKeyDown={(event) => {
+                        if (event.key === 'Enter') {
+                            this.handleSearch(event);
+                        }
+                    }} onChange={this.handleLocationChange} placeholder="Where?" />
                 </div>
                 <div className="SearchBar-submit">
                     <button onClick={this.handleSearch}>Let's Go</button> 
