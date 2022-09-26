@@ -13,7 +13,7 @@ const Yelp = {
                 return jsonResponse.businesses.map(business => {
                     return {
                         id: business.id,
-                        imageSrc: business.image_url,
+                        imageSrc: business.image_url ? business.image_url : 'https://feb.kuleuven.be/drc/LEER/visiting-scholars-1/image-not-available.jpg/image',
                         name: business.name,
                         address: business.location.address1,
                         city: business.location.city,
