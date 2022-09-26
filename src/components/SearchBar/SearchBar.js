@@ -36,27 +36,27 @@ class SearchBar extends React.Component {
         })
     }
 
-    handleTermChange(event) {
+    handleTermChange(e) {
         this.setState({
-            term: event.target.value
+            term: e.target.value
         })
     }
     
-    handleLocationChange(event) {
+    handleLocationChange(e) {
         this.setState({
-            location: event.target.value
+            location: e.target.value
         })
     }
 
-    handleSearch(event) {
+    handleSearch(e) {
         this.props.searchYelp(this.state.term, this.state.location, this.state.sortBy);
-        event.preventDefault();
+        e.preventDefault();
     }
 
-    handleKeyDown(event) {
-        if (event.key === 'Enter') {
-            this.handleSearch(this.event);
-            event.preventDefault();
+    handleKeyDown(e) {
+        if (e.key === 'Enter') {
+            this.handleSearch(this.e);
+            e.preventDefault();
         }
     }
 
@@ -79,9 +79,9 @@ class SearchBar extends React.Component {
                 </div>
                 <div className="SearchBar-fields">
                     <input onChange={this.handleTermChange} placeholder="Search Businesses" />
-                    <input onKeyDown={(event) => {
-                        if (event.key === 'Enter') {
-                            this.handleSearch(event);
+                    <input onKeyDown={(e) => {
+                        if (e.key === 'Enter') {
+                            this.handleSearch(e);
                         }
                     }} onChange={this.handleLocationChange} placeholder="Where?" />
                 </div>
