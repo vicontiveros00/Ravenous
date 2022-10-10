@@ -1,6 +1,6 @@
 # 🍲 Ravenous 🍲
 
-## - ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) There is an issue with calling the Yelp API. I'm working on setting up a proxy CORS server to interact with the API, will be fixed soon.
+## ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) There is an issue with calling the Yelp API. I'm working on setting up a proxy CORS server to interact with the API, will be fixed soon. ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png)
 
 You hungry bro? Look for the best rated restaurants in your area by using this little app to see local, high rated restaurants on Yelp: https://ravenousfood-vic.surge.sh/
 
