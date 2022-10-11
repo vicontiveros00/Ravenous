@@ -1,6 +1,5 @@
 # 🍲 Ravenous 🍲 (API ISSUE FIXED!)
-
-Hosted here: https://ravenousfood-vic.surge.sh/
+If you encounter any issues calling the Yelp API through my CORS proxy server, please get in contact with me.
 
 ## API issue fixed!
 
@@ -20,8 +19,8 @@ This will display popular restaurants with more reviews in descending order of t
 
 ## Built with React JS
 
-Run `npm start` in the terminal at the root of the project. You'll find the app running at `http://localhost:3000`.
+Run `npm start` in the terminal at the root of the project. You'll find the app running at http://localhost:3000.
 
-**Note**: You'll have to get your own API key from Yelp if you wanna run this locally. More info here: https://www.yelp.com/developers/documentation/v3/get_started
+**Note**: You'll have to get your own API key from Yelp if you wanna run this locally. More info here: https://www.yelp.com/developers/documentation/v3/get_started. Insert your API key in `/src/util/Yelp.js:1`
 
 Happy coding!
