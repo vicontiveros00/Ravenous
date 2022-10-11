@@ -1,10 +1,8 @@
 const apiKey = ""; //put your API key here
 
-
-
 const Yelp = {
     searchYelp(term, location, sortBy) {
-        return fetch(`https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`, { //doesn't work unless I have cors prepended
+        return fetch(`https://limitless-shore-11127.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`, {
             headers: {
                 Authorization: `Bearer ${apiKey}`,
             }
