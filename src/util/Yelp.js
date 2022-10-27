@@ -1,4 +1,4 @@
-const apiKey = ""; //put your API key here
+const apiKey = "3mFF0j1NSC4XT060u9PKf8ZgXP1py5Iu92fUj43pjq9oJ-otSe7SBbw07VW_k9EIHN7K3Na2BqJn3gJuTlzufRce5-9lpTCpeHGZQHeJJjXYyTeDqbVaTHhRqPRBY3Yx"; //api key
 
 const Yelp = {
     searchYelp(term, location, sortBy) {
@@ -25,7 +25,7 @@ const Yelp = {
                     }
                 })
             }
-        });
+        })
     }
 }
 
