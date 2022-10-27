@@ -1,8 +1,8 @@
-const apiKey = "3mFF0j1NSC4XT060u9PKf8ZgXP1py5Iu92fUj43pjq9oJ-otSe7SBbw07VW_k9EIHN7K3Na2BqJn3gJuTlzufRce5-9lpTCpeHGZQHeJJjXYyTeDqbVaTHhRqPRBY3Yx"; //api key
+const apiKey = "Hello again to the lads over at Vaisto! If you're reading this, you're awesome."; //api key
 
 const Yelp = {
     searchYelp(term, location, sortBy) {
-        return fetch(`https://limitless-shore-11127.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`, {
+        return fetch(`https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`, {
             headers: {
                 Authorization: `Bearer ${apiKey}`,
             }
