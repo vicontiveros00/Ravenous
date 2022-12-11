@@ -1,8 +1,11 @@
-const apiKey = "Hello again to the lads over at Vaisto! If you're reading this, you're awesome."; //api key
+const apiKey = process.env.REACT_APP_API_KEY; //api key
+const corsProxy = process.env.REACT_APP_CORS_PROXY;//cors required for yelp's api
+
+//solita if you're reading this, hi! 
 
 const Yelp = {
     searchYelp(term, location, sortBy) {
-        return fetch(`https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`, {
+        return fetch(`${corsProxy}https://api.yelp.com/v3/businesses/search?term=${term}&location=${location}&sort_by=${sortBy}`, {
             headers: {
                 Authorization: `Bearer ${apiKey}`,
             }
